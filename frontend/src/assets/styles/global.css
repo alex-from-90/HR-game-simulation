@@ -1,0 +1,165 @@
+ body {
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+     max-width: 1170px;
+     margin-left: auto;
+     margin-right: auto;
+  }
+
+  .link {
+    color: var(--tg-theme-link-color);
+  }
+
+  .button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+    border: none;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+ #usercard {
+     text-align: center;
+ }
+ .container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 0 auto;
+ }
+
+app h1, h2, h3, h4, h5. h6 {
+    text-align: center!important;
+}
+
+
+ a {
+     color: inherit; /* Унаследовать цвет текста от родительского элемента */
+     text-decoration: none; /* Убрать подчеркивание ссылок */
+ }
+
+ a:hover {
+     text-decoration: none; /* Убрать подчеркивание при наведении */
+     color: inherit; /* Унаследовать цвет текста от родительского элемента при наведении */
+ }
+ /* Добавляем стили для note-background */
+ .note-background {
+     background-color: #eee;
+     padding: 5px;
+     border-radius: 5px;
+ }
+
+  .button:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+ .spoiler {
+     margin-top: 20px;
+     width: 100%;
+     max-width: 600px; /* Максимальная ширина спойлера */
+     overflow: hidden;
+ }
+
+ .spoiler button {
+     font-size: 1.2em;
+     padding: 10px 20px;
+     background-color: #3498db;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .spoiler button.active {
+     background-color: #e74c3c;
+ }
+
+ .statistics-content {
+     max-height: 0;
+     opacity: 0;
+     overflow: hidden;
+     transition: max-height 0.5s ease, opacity 0.5s ease;
+ }
+
+ .statistics-content.show {
+     max-height: 500px; /* Высота, когда спойлер раскрыт */
+     opacity: 1;
+ }
+
+ .fade-enter-active,
+ .fade-leave-active {
+     transition: opacity 0.5s;
+ }
+
+ .fade-enter,
+ .fade-leave-to {
+     opacity: 0;
+ }
+
+ .welcome {
+     margin-bottom: 20px;
+ }
+
+ /* Добавление стилей для выделения кнопок, промежутка и обводки */
+ .answer-buttons {
+     display: flex;
+     gap: 20px; /* Промежуток между кнопками */
+ }
+
+ .btn.btn-primary.btn-active,
+ .btn.btn-danger.btn-active {
+     border: 4px solid mediumseagreen; /* Обводка кнопок */
+ }
+
+ .start-game-btn,
+ .admin-btn {
+     padding: 12px 24px;
+     margin-bottom: 10px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 18px;
+     font-weight: bold;
+     text-transform: uppercase;
+     transition: background-color 0.3s ease;
+     width: 200px; /* Ширина кнопок */
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ .fixed-width-btn {
+     width: 150px; /* фиксированную ширину */
+     margin-top: 10px;
+ }
+ .start-game-btn:hover,
+ .admin-btn:hover {
+     opacity: 0.9;
+ }
+
+ .start-game-btn {
+     background-color: #4caf50;
+     color: white;
+ }
+
+ .admin-btn {
+     background-color: #2196f3;
+     color: white;
+ }
+
+ .chapter-buttons {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     margin-bottom: 10px;
+ }
+
+ .custom-btn {
+     width: 100%; /* Ширина кнопок, чтобы они равномерно распределялись по контейнеру */
+     margin-bottom: 10px;
+     /* Другие кастомные стили, если необходимо */
+ }
